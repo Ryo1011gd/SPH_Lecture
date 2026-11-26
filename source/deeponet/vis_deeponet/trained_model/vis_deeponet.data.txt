@@ -1,0 +1,7 @@
+# paste into the solver .data file (settings this model was trained for)
+VisDon              1
+VisDonModel         /media/ryo/NewVolume/Implicit_SPH/source/deeponet/vis_deeponet/trained_model/vis_deeponet.bin
+VisDonChebDegree    6
+VisDonChebRatio     30.0
+VisDonSmoothSweeps  1
+VisDonOmega         0.7

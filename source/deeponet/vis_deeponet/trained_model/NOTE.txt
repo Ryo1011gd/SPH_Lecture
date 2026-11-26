@@ -1,0 +1,1 @@
+Starter model: trained only on T05_FreezingCollapse_mu100_dp0.002 (t=0..0.15 s, 150 snapshots, 2026-10-19). Retrain with make train VIS=1 after generating data with DATASET=1 VIS=1 / ALL=1.

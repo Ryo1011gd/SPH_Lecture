@@ -1,0 +1,11 @@
+# paste into the solver .data file (settings this model was trained for)
+PpeDon              1
+PpeDonModel         /media/ryo/NewVolume/Implicit_SPH/source/deeponet/ppe_deeponet/trained_model/ppe_deeponet.bin
+PpeDonCoarse        1
+PpeDonPreSmooth     1
+PpeDonPostSmooth    1
+PpeDonChebDegree    10
+PpeDonChebRatio     30.0
+PpeDonSmoothSweeps  1
+PpeDonOmega         0.7
+PpeDonInitialGuess  1

@@ -1,0 +1,38 @@
+start 2026年 10月 14日 水曜日 15:50:51 JST
+python3 ppe_deeponet/train_ppe_don.py --data /media/ryo/NewVolume/Implicit_SPH/results/trained_data/D01_ViscousCollapse_mu1e2_AR1_dp3e-3/ /media/ryo/NewVolume/Implicit_SPH/results/trained_data/D01_ViscousCollapse_mu1e2_AR2.8_dp3e-3/ /media/ryo/NewVolume/Implicit_SPH/results/trained_data/D02_CylinderDrop_mu1e2_dp3e-3/ /media/ryo/NewVolume/Implicit_SPH/results/trained_data/V02_CircCouette_mu1e2_dp4e-3/ --out ppe_deeponet/trained_model --epochs 30 --val-fraction 0 --fourier-max 10
+/media/ryo/NewVolume/Implicit_SPH/source/ppe_deeponet/ppe_don_data.py:88: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at ../aten/src/ATen/SparseCsrTensorImpl.cpp:53.)
+  self.A = torch.sparse_csr_tensor(crow, col, val, size=(self.n, self.n))
+train snapshots 700  val snapshots 70
+ep   0    41.6s train galerkin=4.903e-02 learned=3.276e-01 solution=5.491e+00 ortho=1.554e-02 | val galerkin=2.672e-02 learned=3.155e-01 solution=1.419e+01 ortho=1.556e-02
+ep   1    83.2s train galerkin=1.636e-02 learned=2.935e-01 solution=5.935e+00 ortho=1.557e-02 | val galerkin=1.173e-02 learned=2.878e-01 solution=1.254e+00 ortho=1.558e-02
+ep   2   124.3s train galerkin=8.717e-03 learned=2.650e-01 solution=4.867e+00 ortho=1.558e-02 | val galerkin=7.284e-03 learned=2.750e-01 solution=1.386e+00 ortho=1.558e-02
+ep   3   166.1s train galerkin=6.288e-03 learned=2.484e-01 solution=4.016e+00 ortho=1.558e-02 | val galerkin=5.313e-03 learned=2.360e-01 solution=2.464e+00 ortho=1.559e-02
+ep   4   207.9s train galerkin=5.063e-03 learned=2.264e-01 solution=3.664e+00 ortho=1.558e-02 | val galerkin=4.943e-03 learned=2.195e-01 solution=1.107e+00 ortho=1.559e-02 iter_jacobi=104.3 iter_galerkin=2.7 iter_learned=7.3
+ep   5   249.9s train galerkin=4.281e-03 learned=2.074e-01 solution=3.132e+00 ortho=1.558e-02 | val galerkin=4.392e-03 learned=2.168e-01 solution=5.929e+00 ortho=1.558e-02
+ep   6   291.6s train galerkin=3.862e-03 learned=1.857e-01 solution=3.433e+00 ortho=1.558e-02 | val galerkin=4.349e-03 learned=1.599e-01 solution=1.618e+00 ortho=1.558e-02
+ep   7   333.6s train galerkin=3.729e-03 learned=1.679e-01 solution=2.779e+00 ortho=1.559e-02 | val galerkin=4.077e-03 learned=1.592e-01 solution=1.055e+00 ortho=1.559e-02
+ep   8   375.3s train galerkin=3.772e-03 learned=1.495e-01 solution=2.499e+00 ortho=1.559e-02 | val galerkin=3.613e-03 learned=1.405e-01 solution=1.123e+00 ortho=1.559e-02
+ep   9   417.8s train galerkin=3.632e-03 learned=1.385e-01 solution=1.901e+00 ortho=1.559e-02 | val galerkin=3.681e-03 learned=1.403e-01 solution=1.443e+00 ortho=1.559e-02 iter_jacobi=104.3 iter_galerkin=2.7 iter_learned=6.3
+ep  10   459.2s train galerkin=3.450e-03 learned=1.295e-01 solution=1.950e+00 ortho=1.559e-02 | val galerkin=3.724e-03 learned=1.278e-01 solution=1.181e+00 ortho=1.559e-02
+ep  11   501.2s train galerkin=3.216e-03 learned=1.157e-01 solution=1.725e+00 ortho=1.559e-02 | val galerkin=3.548e-03 learned=1.146e-01 solution=1.442e+00 ortho=1.559e-02
+ep  12   543.1s train galerkin=2.955e-03 learned=1.087e-01 solution=1.592e+00 ortho=1.559e-02 | val galerkin=3.327e-03 learned=9.588e-02 solution=8.332e-01 ortho=1.559e-02
+ep  13   584.5s train galerkin=2.812e-03 learned=9.938e-02 solution=1.440e+00 ortho=1.559e-02 | val galerkin=2.753e-03 learned=8.728e-02 solution=9.398e-01 ortho=1.559e-02
+ep  14   626.6s train galerkin=2.794e-03 learned=9.260e-02 solution=1.255e+00 ortho=1.559e-02 | val galerkin=2.939e-03 learned=7.136e-02 solution=7.805e-01 ortho=1.559e-02 iter_jacobi=104.3 iter_galerkin=2.3 iter_learned=6.0
+ep  15   668.1s train galerkin=2.594e-03 learned=8.487e-02 solution=1.224e+00 ortho=1.559e-02 | val galerkin=2.758e-03 learned=9.193e-02 solution=7.235e-01 ortho=1.559e-02
+ep  16   710.1s train galerkin=2.374e-03 learned=7.848e-02 solution=1.165e+00 ortho=1.559e-02 | val galerkin=2.930e-03 learned=7.648e-02 solution=6.008e-01 ortho=1.559e-02
+ep  17   752.1s train galerkin=2.286e-03 learned=7.310e-02 solution=1.084e+00 ortho=1.559e-02 | val galerkin=2.641e-03 learned=6.687e-02 solution=5.918e-01 ortho=1.559e-02
+ep  18   794.3s train galerkin=2.136e-03 learned=6.703e-02 solution=9.701e-01 ortho=1.559e-02 | val galerkin=2.528e-03 learned=6.339e-02 solution=6.089e-01 ortho=1.559e-02
+ep  19   836.7s train galerkin=2.116e-03 learned=6.271e-02 solution=8.097e-01 ortho=1.559e-02 | val galerkin=2.274e-03 learned=6.192e-02 solution=5.696e-01 ortho=1.559e-02 iter_jacobi=104.3 iter_galerkin=2.3 iter_learned=5.3
+ep  20   877.8s train galerkin=1.961e-03 learned=5.693e-02 solution=8.291e-01 ortho=1.559e-02 | val galerkin=2.308e-03 learned=5.497e-02 solution=5.053e-01 ortho=1.559e-02
+ep  21   919.0s train galerkin=1.849e-03 learned=5.445e-02 solution=6.589e-01 ortho=1.559e-02 | val galerkin=2.105e-03 learned=4.878e-02 solution=5.007e-01 ortho=1.559e-02
+ep  22   960.0s train galerkin=1.791e-03 learned=4.925e-02 solution=6.368e-01 ortho=1.559e-02 | val galerkin=1.986e-03 learned=4.734e-02 solution=4.459e-01 ortho=1.559e-02
+ep  23  1001.4s train galerkin=1.786e-03 learned=4.769e-02 solution=6.233e-01 ortho=1.559e-02 | val galerkin=1.979e-03 learned=4.524e-02 solution=4.214e-01 ortho=1.559e-02
+ep  24  1043.8s train galerkin=1.690e-03 learned=4.428e-02 solution=5.336e-01 ortho=1.559e-02 | val galerkin=1.957e-03 learned=4.148e-02 solution=4.265e-01 ortho=1.559e-02 iter_jacobi=104.3 iter_galerkin=2.3 iter_learned=4.7
+ep  25  1085.5s train galerkin=1.679e-03 learned=4.252e-02 solution=5.195e-01 ortho=1.559e-02 | val galerkin=1.866e-03 learned=4.303e-02 solution=4.260e-01 ortho=1.559e-02
+ep  26  1126.6s train galerkin=1.644e-03 learned=4.126e-02 solution=4.856e-01 ortho=1.559e-02 | val galerkin=1.805e-03 learned=4.091e-02 solution=4.165e-01 ortho=1.559e-02
+ep  27  1168.0s train galerkin=1.596e-03 learned=4.077e-02 solution=4.640e-01 ortho=1.559e-02 | val galerkin=1.859e-03 learned=4.020e-02 solution=4.127e-01 ortho=1.559e-02
+ep  28  1209.8s train galerkin=1.623e-03 learned=4.104e-02 solution=4.673e-01 ortho=1.559e-02 | val galerkin=1.821e-03 learned=3.908e-02 solution=4.054e-01 ortho=1.559e-02
+ep  29  1252.2s train galerkin=1.582e-03 learned=3.939e-02 solution=4.688e-01 ortho=1.559e-02 | val galerkin=1.873e-03 learned=4.256e-02 solution=4.071e-01 ortho=1.559e-02 iter_jacobi=104.3 iter_galerkin=2.3 iter_learned=4.7
+best model -> ppe_deeponet/trained_model/ppe_deeponet.bin
+solver settings -> ppe_deeponet/trained_model/ppe_deeponet.data.txt
+done rc=0 2026年 10月 14日 水曜日 16:11:49 JST

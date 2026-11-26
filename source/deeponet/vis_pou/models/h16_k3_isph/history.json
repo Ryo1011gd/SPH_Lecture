@@ -1,0 +1,361 @@
+{
+ "args": {
+  "data": [
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000005.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000010.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000015.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000020.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000025.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000030.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000035.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000040.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000045.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000050.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000055.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000060.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000065.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000070.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000075.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000080.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000085.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000090.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000095.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000100.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000105.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000110.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000115.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000120.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000125.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000130.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000135.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000140.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000145.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000150.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000155.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000160.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000165.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000170.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000175.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000180.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000185.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000190.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000195.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000200.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000205.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000210.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000215.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000220.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000225.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000230.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000235.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000240.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000245.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000250.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000255.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000260.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000265.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000270.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000275.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000280.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000285.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000290.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000295.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000300.bin"
+  ],
+  "val": [
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000320.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000340.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000360.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000380.bin",
+   "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000400.bin"
+  ],
+  "out": "models/h16_k3_isph",
+  "hsub": 16.0,
+  "k": 3,
+  "width": 48,
+  "latent": 16,
+  "epochs": 40,
+  "lr": 0.002,
+  "reg": 1e-08,
+  "white_probes": 2,
+  "smooth_probes": 10,
+  "sweeps": [
+   16,
+   64,
+   256,
+   512
+  ],
+  "seed": 0
+ },
+ "train": [
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000005.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000010.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000015.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000020.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000025.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000030.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000035.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000040.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000045.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000050.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000055.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000060.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000065.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000070.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000075.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000080.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000085.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000090.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000095.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000100.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000105.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000110.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000115.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000120.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000125.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000130.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000135.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000140.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000145.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000150.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000155.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000160.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000165.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000170.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000175.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000180.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000185.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000190.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000195.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000200.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000205.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000210.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000215.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000220.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000225.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000230.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000235.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000240.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000245.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000250.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000255.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000260.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000265.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000270.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000275.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000280.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000285.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000290.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000295.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000300.bin"
+ ],
+ "val": [
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000320.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000340.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000360.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000380.bin",
+  "../../results/timing_amgx/scaling/train_snap_isph/dp0.002/vis_0000400.bin"
+ ],
+ "history": [
+  {
+   "epoch": 0,
+   "train": 0.03529900411007172,
+   "val": 0.013843545099820036
+  },
+  {
+   "epoch": 1,
+   "train": 0.015811155215789807,
+   "val": 0.007493556034008404
+  },
+  {
+   "epoch": 2,
+   "train": 0.011683321305851528,
+   "val": 0.005503525058410344
+  },
+  {
+   "epoch": 3,
+   "train": 0.009758643850508262,
+   "val": 0.00471062752925946
+  },
+  {
+   "epoch": 4,
+   "train": 0.009107497481425001,
+   "val": 0.005077929089128098
+  },
+  {
+   "epoch": 5,
+   "train": 0.00781646056811425,
+   "val": 0.003950988331305597
+  },
+  {
+   "epoch": 6,
+   "train": 0.00706591638532079,
+   "val": 0.0038527618730174384
+  },
+  {
+   "epoch": 7,
+   "train": 0.006613432601789023,
+   "val": 0.0036054868836675664
+  },
+  {
+   "epoch": 8,
+   "train": 0.006037399376121005,
+   "val": 0.003304453098992769
+  },
+  {
+   "epoch": 9,
+   "train": 0.00568264080638787,
+   "val": 0.0036617968997663063
+  },
+  {
+   "epoch": 10,
+   "train": 0.0056353453703372304,
+   "val": 0.0030135217190957104
+  },
+  {
+   "epoch": 11,
+   "train": 0.0051073651113687215,
+   "val": 0.003245672685066283
+  },
+  {
+   "epoch": 12,
+   "train": 0.004848697693896331,
+   "val": 0.00300363437987544
+  },
+  {
+   "epoch": 13,
+   "train": 0.005383257471949454,
+   "val": 0.0034353478100577887
+  },
+  {
+   "epoch": 14,
+   "train": 0.004976944934335603,
+   "val": 0.002807618064845137
+  },
+  {
+   "epoch": 15,
+   "train": 0.00447153817425036,
+   "val": 0.0029707163600928995
+  },
+  {
+   "epoch": 16,
+   "train": 0.004090789094314138,
+   "val": 0.002798084270664505
+  },
+  {
+   "epoch": 17,
+   "train": 0.0044039282853705845,
+   "val": 0.002870268375542182
+  },
+  {
+   "epoch": 18,
+   "train": 0.004044420878481092,
+   "val": 0.0029709141112053404
+  },
+  {
+   "epoch": 19,
+   "train": 0.003979675994970234,
+   "val": 0.002790204465140299
+  },
+  {
+   "epoch": 20,
+   "train": 0.00404978062285712,
+   "val": 0.0026985576812062883
+  },
+  {
+   "epoch": 21,
+   "train": 0.003554290033676118,
+   "val": 0.002823408408338636
+  },
+  {
+   "epoch": 22,
+   "train": 0.003639606294914001,
+   "val": 0.002921033709764421
+  },
+  {
+   "epoch": 23,
+   "train": 0.0038109904196413744,
+   "val": 0.0030964819191437285
+  },
+  {
+   "epoch": 24,
+   "train": 0.0034359690291024592,
+   "val": 0.0026397495484402353
+  },
+  {
+   "epoch": 25,
+   "train": 0.0034129846967102186,
+   "val": 0.0023378373533756575
+  },
+  {
+   "epoch": 26,
+   "train": 0.0031674581567571513,
+   "val": 0.002729781968301909
+  },
+  {
+   "epoch": 27,
+   "train": 0.0031742476304894977,
+   "val": 0.002475692061614153
+  },
+  {
+   "epoch": 28,
+   "train": 0.0028265798679205693,
+   "val": 0.002413153102070328
+  },
+  {
+   "epoch": 29,
+   "train": 0.003062600860229299,
+   "val": 0.002475570445991262
+  },
+  {
+   "epoch": 30,
+   "train": 0.003106812956822984,
+   "val": 0.002479708002896673
+  },
+  {
+   "epoch": 31,
+   "train": 0.0029095734232680646,
+   "val": 0.0023302121569158743
+  },
+  {
+   "epoch": 32,
+   "train": 0.0029261146717595886,
+   "val": 0.0025121754106918097
+  },
+  {
+   "epoch": 33,
+   "train": 0.002678419018104086,
+   "val": 0.0023306425509734114
+  },
+  {
+   "epoch": 34,
+   "train": 0.002753631716560604,
+   "val": 0.0023076052687585683
+  },
+  {
+   "epoch": 35,
+   "train": 0.002669667842905149,
+   "val": 0.0023816147292908068
+  },
+  {
+   "epoch": 36,
+   "train": 0.002877514744115757,
+   "val": 0.002375925655498803
+  },
+  {
+   "epoch": 37,
+   "train": 0.002588760219658955,
+   "val": 0.0023952513309040144
+  },
+  {
+   "epoch": 38,
+   "train": 0.00275803111002466,
+   "val": 0.002399802890645007
+  },
+  {
+   "epoch": 39,
+   "train": 0.0027501229183640357,
+   "val": 0.0023798487414539594
+  }
+ ]
+}

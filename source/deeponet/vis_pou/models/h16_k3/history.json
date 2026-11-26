@@ -1,0 +1,303 @@
+{
+ "args": {
+  "data": [
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000050.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000100.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000150.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000200.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000250.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000300.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000350.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000400.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000450.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000500.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000550.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000600.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000650.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000700.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000750.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000800.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000850.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000900.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000950.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001000.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001050.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001100.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001150.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001200.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001250.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001300.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001350.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001400.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001450.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001500.bin"
+  ],
+  "val": [
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001750.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0002000.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0002250.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0002500.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0002750.bin",
+   "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0003000.bin"
+  ],
+  "out": "models/h16_k3",
+  "hsub": 16.0,
+  "k": 3,
+  "width": 48,
+  "latent": 16,
+  "epochs": 40,
+  "lr": 0.002,
+  "reg": 1e-08,
+  "white_probes": 2,
+  "smooth_probes": 10,
+  "sweeps": [
+   16,
+   64,
+   256,
+   512
+  ],
+  "seed": 0
+ },
+ "train": [
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000050.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000100.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000150.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000200.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000250.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000300.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000350.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000400.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000450.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000500.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000550.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000600.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000650.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000700.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000750.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000800.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000850.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000900.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0000950.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001000.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001050.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001100.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001150.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001200.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001250.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001300.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001350.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001400.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001450.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001500.bin"
+ ],
+ "val": [
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0001750.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0002000.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0002250.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0002500.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0002750.bin",
+  "../../results/trained_data/T05_FreezingCollapse_mu100_dp0.002/vis_0003000.bin"
+ ],
+ "history": [
+  {
+   "epoch": 0,
+   "train": 0.02045347336573119,
+   "val": 0.01155622638032721
+  },
+  {
+   "epoch": 1,
+   "train": 0.009155834507489065,
+   "val": 0.007562497603068668
+  },
+  {
+   "epoch": 2,
+   "train": 0.007319790936352727,
+   "val": 0.005532507458621123
+  },
+  {
+   "epoch": 3,
+   "train": 0.00558357584837092,
+   "val": 0.0044674196269005
+  },
+  {
+   "epoch": 4,
+   "train": 0.0045388343466347325,
+   "val": 0.0049235428681612264
+  },
+  {
+   "epoch": 5,
+   "train": 0.003959078617660283,
+   "val": 0.003586480446186997
+  },
+  {
+   "epoch": 6,
+   "train": 0.00409651365638018,
+   "val": 0.0025487502479304754
+  },
+  {
+   "epoch": 7,
+   "train": 0.002834037957956217,
+   "val": 0.002311150841117523
+  },
+  {
+   "epoch": 8,
+   "train": 0.0021067407249284555,
+   "val": 0.0023035336339237295
+  },
+  {
+   "epoch": 9,
+   "train": 0.0018712006945309303,
+   "val": 0.0024515196459536717
+  },
+  {
+   "epoch": 10,
+   "train": 0.0017826770313350562,
+   "val": 0.0024600629958705564
+  },
+  {
+   "epoch": 11,
+   "train": 0.0020612099856298343,
+   "val": 0.002498992696558808
+  },
+  {
+   "epoch": 12,
+   "train": 0.001695907410719405,
+   "val": 0.002532677945122655
+  },
+  {
+   "epoch": 13,
+   "train": 0.0015499168179041918,
+   "val": 0.0022569283322943327
+  },
+  {
+   "epoch": 14,
+   "train": 0.0014544744022091077,
+   "val": 0.0024753963815461176
+  },
+  {
+   "epoch": 15,
+   "train": 0.0014617683605224524,
+   "val": 0.002493692452258525
+  },
+  {
+   "epoch": 16,
+   "train": 0.0014234831727520532,
+   "val": 0.002324903514577478
+  },
+  {
+   "epoch": 17,
+   "train": 0.001348789807912721,
+   "val": 0.0026440492561771423
+  },
+  {
+   "epoch": 18,
+   "train": 0.0014238147118125024,
+   "val": 0.0023850141803682112
+  },
+  {
+   "epoch": 19,
+   "train": 0.001314404219309282,
+   "val": 0.002476272825438067
+  },
+  {
+   "epoch": 20,
+   "train": 0.0012512643097815537,
+   "val": 0.0024025987610875755
+  },
+  {
+   "epoch": 21,
+   "train": 0.0012212108737609218,
+   "val": 0.0023276321410859173
+  },
+  {
+   "epoch": 22,
+   "train": 0.001191863556415197,
+   "val": 0.0023060510572494464
+  },
+  {
+   "epoch": 23,
+   "train": 0.0012051293349594518,
+   "val": 0.0020916243192050624
+  },
+  {
+   "epoch": 24,
+   "train": 0.001164762693706371,
+   "val": 0.0027446292251784334
+  },
+  {
+   "epoch": 25,
+   "train": 0.0010633625877257402,
+   "val": 0.002259054964042493
+  },
+  {
+   "epoch": 26,
+   "train": 0.0011424910740976768,
+   "val": 0.002282932660458021
+  },
+  {
+   "epoch": 27,
+   "train": 0.0010948770332293726,
+   "val": 0.0024517677513336525
+  },
+  {
+   "epoch": 28,
+   "train": 0.0010452042577930214,
+   "val": 0.0022573139590346502
+  },
+  {
+   "epoch": 29,
+   "train": 0.0010664196725883293,
+   "val": 0.002442186590185228
+  },
+  {
+   "epoch": 30,
+   "train": 0.0010616021599015857,
+   "val": 0.002293814683932462
+  },
+  {
+   "epoch": 31,
+   "train": 0.0010843820563153697,
+   "val": 0.002191416387672966
+  },
+  {
+   "epoch": 32,
+   "train": 0.0010159426245030705,
+   "val": 0.002121492798029681
+  },
+  {
+   "epoch": 33,
+   "train": 0.001000497028472199,
+   "val": 0.0023903568332437884
+  },
+  {
+   "epoch": 34,
+   "train": 0.0010061712740785404,
+   "val": 0.0022256537672114356
+  },
+  {
+   "epoch": 35,
+   "train": 0.0010298034542363884,
+   "val": 0.002200099189336144
+  },
+  {
+   "epoch": 36,
+   "train": 0.001027307472927208,
+   "val": 0.002068457381303824
+  },
+  {
+   "epoch": 37,
+   "train": 0.0009932560215852061,
+   "val": 0.0022157772259287912
+  },
+  {
+   "epoch": 38,
+   "train": 0.001059852131294979,
+   "val": 0.0023594655473266266
+  },
+  {
+   "epoch": 39,
+   "train": 0.0010290321510651186,
+   "val": 0.0022340596047223833
+  }
+ ]
+}

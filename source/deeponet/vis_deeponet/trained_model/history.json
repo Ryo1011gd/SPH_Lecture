@@ -1,0 +1,536 @@
+{
+ "args": {
+  "data": [
+   "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05"
+  ],
+  "val_data": null,
+  "val_fraction": 0.2,
+  "out": "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/model_T05",
+  "epochs": 30,
+  "lr": 0.002,
+  "weight_decay": 1e-05,
+  "basis": 64,
+  "width": 64,
+  "depth": 2,
+  "latent": 32,
+  "fourier": 16,
+  "fourier_max": 10.0,
+  "white_probes": 2,
+  "smooth_probes": 10,
+  "sweeps": [
+   16,
+   64,
+   256,
+   512
+  ],
+  "omega": 0.7,
+  "smooth_sweeps": 1,
+  "cheb_degree": 6,
+  "cheb_ratio": 30.0,
+  "reg": 1e-10,
+  "w_energy": 1.0,
+  "w_ortho": 0.001,
+  "no_augment": false,
+  "max_snapshots": 0,
+  "seed": 0,
+  "device": "cuda"
+ },
+ "train_files": [
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000010.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000020.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000030.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000040.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000050.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000060.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000070.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000080.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000090.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000100.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000110.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000120.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000130.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000140.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000150.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000160.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000170.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000180.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000190.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000200.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000210.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000220.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000230.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000240.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000250.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000260.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000270.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000280.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000290.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000300.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000310.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000320.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000330.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000340.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000350.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000360.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000370.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000380.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000390.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000400.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000410.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000420.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000430.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000440.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000450.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000460.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000470.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000480.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000490.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000500.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000510.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000520.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000530.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000540.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000550.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000560.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000570.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000580.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000590.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000600.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000610.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000620.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000630.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000640.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000650.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000660.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000670.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000680.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000690.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000700.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000710.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000720.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000730.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000740.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000750.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000760.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000770.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000780.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000790.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000800.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000810.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000820.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000830.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000840.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000850.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000860.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000870.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000880.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000890.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000900.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000910.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000920.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000930.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000940.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000950.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000960.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000970.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000980.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0000990.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001000.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001010.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001020.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001030.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001040.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001050.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001060.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001070.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001080.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001090.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001100.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001110.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001120.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001130.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001140.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001150.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001160.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001170.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001180.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001190.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001200.bin"
+ ],
+ "val_files": [
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001210.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001220.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001230.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001240.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001250.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001260.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001270.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001280.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001290.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001300.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001310.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001320.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001330.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001340.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001350.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001360.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001370.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001380.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001390.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001400.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001410.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001420.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001430.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001440.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001450.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001460.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001470.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001480.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001490.bin",
+  "/tmp/claude-1000/-media-ryo-NewVolume-Implicit-SPH/19d7caa8-5575-481f-a7a9-8b115046e65e/scratchpad/visdata/T05/vis_0001500.bin"
+ ],
+ "history": [
+  {
+   "epoch": 0,
+   "train": {
+    "energy": 0.056084989103871725,
+    "ortho": 0.015467872106918799
+   },
+   "val": {
+    "energy": 0.0471668078709077,
+    "ortho": 0.015434316688489767
+   }
+  },
+  {
+   "epoch": 1,
+   "train": {
+    "energy": 0.014658386601021468,
+    "ortho": 0.015418207600945671
+   },
+   "val": {
+    "energy": 0.020426777336246496,
+    "ortho": 0.015367345144785419
+   }
+  },
+  {
+   "epoch": 2,
+   "train": {
+    "energy": 0.006854927516371017,
+    "ortho": 0.01538858438494226
+   },
+   "val": {
+    "energy": 0.010121436648442566,
+    "ortho": 0.01536225492540785
+   }
+  },
+  {
+   "epoch": 3,
+   "train": {
+    "energy": 0.004042780672447458,
+    "ortho": 0.015375555953437491
+   },
+   "val": {
+    "energy": 0.006600732138697784,
+    "ortho": 0.01534986651724531
+   }
+  },
+  {
+   "epoch": 4,
+   "train": {
+    "energy": 0.003034736313220494,
+    "ortho": 0.015369966051226409
+   },
+   "val": {
+    "energy": 0.004254659663443381,
+    "ortho": 0.015351746507024177,
+    "iter_jacobi": 1122.3333333333333,
+    "iter_deeponet": 6.0
+   }
+  },
+  {
+   "epoch": 5,
+   "train": {
+    "energy": 0.002483720256304635,
+    "ortho": 0.015365984446578558
+   },
+   "val": {
+    "energy": 0.0037942938971433885,
+    "ortho": 0.015351800387715673
+   }
+  },
+  {
+   "epoch": 6,
+   "train": {
+    "energy": 0.002158064605569054,
+    "ortho": 0.015363734208274775
+   },
+   "val": {
+    "energy": 0.003743897842391962,
+    "ortho": 0.015352924306458305
+   }
+  },
+  {
+   "epoch": 7,
+   "train": {
+    "energy": 0.0018844611717169783,
+    "ortho": 0.015363738528798456
+   },
+   "val": {
+    "energy": 0.0029618200777415944,
+    "ortho": 0.015354328035127903
+   }
+  },
+  {
+   "epoch": 8,
+   "train": {
+    "energy": 0.0016393078694994132,
+    "ortho": 0.015363306283555827
+   },
+   "val": {
+    "energy": 0.0024690934262354574,
+    "ortho": 0.01535615957246087
+   }
+  },
+  {
+   "epoch": 9,
+   "train": {
+    "energy": 0.001430331623298261,
+    "ortho": 0.015363733401503278
+   },
+   "val": {
+    "energy": 0.0023242125454678176,
+    "ortho": 0.0153596761665128,
+    "iter_jacobi": 1122.3333333333333,
+    "iter_deeponet": 6.0
+   }
+  },
+  {
+   "epoch": 10,
+   "train": {
+    "energy": 0.0014032547129180521,
+    "ortho": 0.015364344771559532
+   },
+   "val": {
+    "energy": 0.002320921350866868,
+    "ortho": 0.015361300802369601
+   }
+  },
+  {
+   "epoch": 11,
+   "train": {
+    "energy": 0.0013671849193829758,
+    "ortho": 0.01536581347423919
+   },
+   "val": {
+    "energy": 0.0020384914348387908,
+    "ortho": 0.015367680210671465
+   }
+  },
+  {
+   "epoch": 12,
+   "train": {
+    "energy": 0.0012454732311696943,
+    "ortho": 0.015366343371408348
+   },
+   "val": {
+    "energy": 0.0020523504472437656,
+    "ortho": 0.015370998555647023
+   }
+  },
+  {
+   "epoch": 13,
+   "train": {
+    "energy": 0.0011387287691226142,
+    "ortho": 0.015368629288473738
+   },
+   "val": {
+    "energy": 0.0018561452948024132,
+    "ortho": 0.01537422643337882
+   }
+  },
+  {
+   "epoch": 14,
+   "train": {
+    "energy": 0.0010645735534342013,
+    "ortho": 0.015368956120871807
+   },
+   "val": {
+    "energy": 0.0017856333749006327,
+    "ortho": 0.015373938361018961,
+    "iter_jacobi": 1122.3333333333333,
+    "iter_deeponet": 5.0
+   }
+  },
+  {
+   "epoch": 15,
+   "train": {
+    "energy": 0.0010113623853479996,
+    "ortho": 0.015370091139260685
+   },
+   "val": {
+    "energy": 0.0018255379049248346,
+    "ortho": 0.015378170801253675
+   }
+  },
+  {
+   "epoch": 16,
+   "train": {
+    "energy": 0.0009456006755603612,
+    "ortho": 0.015370426320753219
+   },
+   "val": {
+    "energy": 0.0016696308639537053,
+    "ortho": 0.015380240614186259
+   }
+  },
+  {
+   "epoch": 17,
+   "train": {
+    "energy": 0.0009573141465123952,
+    "ortho": 0.015371179158827882
+   },
+   "val": {
+    "energy": 0.0017186797812374169,
+    "ortho": 0.015378060402128642
+   }
+  },
+  {
+   "epoch": 18,
+   "train": {
+    "energy": 0.0009378427133416268,
+    "ortho": 0.015370662369781903
+   },
+   "val": {
+    "energy": 0.0015349950160090454,
+    "ortho": 0.015381933610572792
+   }
+  },
+  {
+   "epoch": 19,
+   "train": {
+    "energy": 0.0008858649339613546,
+    "ortho": 0.015371445495291547
+   },
+   "val": {
+    "energy": 0.0015599917466214662,
+    "ortho": 0.015380375547241061,
+    "iter_jacobi": 1122.3333333333333,
+    "iter_deeponet": 5.0
+   }
+  },
+  {
+   "epoch": 20,
+   "train": {
+    "energy": 0.0008522669163856795,
+    "ortho": 0.015371761034411928
+   },
+   "val": {
+    "energy": 0.0015508182515435716,
+    "ortho": 0.015378957474682108
+   }
+  },
+  {
+   "epoch": 21,
+   "train": {
+    "energy": 0.0008183857799989278,
+    "ortho": 0.015372638352892435
+   },
+   "val": {
+    "energy": 0.001439089311874644,
+    "ortho": 0.015381294996494963
+   }
+  },
+  {
+   "epoch": 22,
+   "train": {
+    "energy": 0.0008257274923959459,
+    "ortho": 0.015372987042932525
+   },
+   "val": {
+    "energy": 0.001519756299925855,
+    "ortho": 0.015379150396886821
+   }
+  },
+  {
+   "epoch": 23,
+   "train": {
+    "energy": 0.0007887824295255229,
+    "ortho": 0.015373256339661561
+   },
+   "val": {
+    "energy": 0.0015037747911226453,
+    "ortho": 0.015378738637160872
+   }
+  },
+  {
+   "epoch": 24,
+   "train": {
+    "energy": 0.0008054911048272297,
+    "ortho": 0.015373068405202424
+   },
+   "val": {
+    "energy": 0.0014536317507903437,
+    "ortho": 0.015382391145713582,
+    "iter_jacobi": 1122.3333333333333,
+    "iter_deeponet": 5.0
+   }
+  },
+  {
+   "epoch": 25,
+   "train": {
+    "energy": 0.0007717095344523956,
+    "ortho": 0.01537392040148564
+   },
+   "val": {
+    "energy": 0.001392948530975636,
+    "ortho": 0.015381549418184062
+   }
+  },
+  {
+   "epoch": 26,
+   "train": {
+    "energy": 0.0007599149317527445,
+    "ortho": 0.015373914265255032
+   },
+   "val": {
+    "energy": 0.001446658631883217,
+    "ortho": 0.01538147740111931
+   }
+  },
+  {
+   "epoch": 27,
+   "train": {
+    "energy": 0.0007533611657790089,
+    "ortho": 0.01537416852559041
+   },
+   "val": {
+    "energy": 0.0013912201945903658,
+    "ortho": 0.015382423802825507
+   }
+  },
+  {
+   "epoch": 28,
+   "train": {
+    "energy": 0.0007736318368265358,
+    "ortho": 0.015374029152000738
+   },
+   "val": {
+    "energy": 0.0013923953004131898,
+    "ortho": 0.015382366728509398
+   }
+  },
+  {
+   "epoch": 29,
+   "train": {
+    "energy": 0.0007541253764907643,
+    "ortho": 0.015374349907254786
+   },
+   "val": {
+    "energy": 0.0014299502304875697,
+    "ortho": 0.015382435694602497,
+    "iter_jacobi": 1122.3333333333333,
+    "iter_deeponet": 5.0
+   }
+  }
+ ]
+}
