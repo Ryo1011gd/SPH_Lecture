@@ -4,4 +4,4 @@
 # rigid_history.csv (コンクリートの残り粒子数) はこのフォルダに出る
 cd "$(dirname "$0")"
 mkdir -p output
-../../../source/SPH_omp box.data box.grid output/box%04d.prof output/box%04d.vtk output/box.log 4
+../../../source/SPH_gcc box.data box.grid output/box%04d.prof output/box%04d.vtk output/box.log 4
