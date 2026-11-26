@@ -1,0 +1,44 @@
+# 演習1: ダムブレイク (水柱崩壊)  V&V
+# 比較対象: Martin & Moyce (1952) 水柱幅 a = 0.1 m, 高さ 2a (n^2 = 2)
+# Type 1 = 水, Type 2 = 壁 (静止)
+
+ParticleDistance        0.003
+
+LowerDomain            -0.02000   -0.02000   -0.00150
+UpperDomain             0.62000    0.40000    0.00150
+
+# 水柱 a x 2a
+StartCuboid
+Spacing                 0.003
+Type                    1
+Lower                 0.00000    0.00000   -0.00150
+Upper                 0.10000    0.20000    0.00150
+Velocity              0.00000    0.00000  0.0
+EndCuboid
+
+# 床 (3 層)
+StartCuboid
+Spacing                 0.003
+Type                    2
+Lower                -0.01500   -0.01500   -0.00150
+Upper                 0.61500    0.00000    0.00150
+Velocity              0.00000    0.00000  0.0
+EndCuboid
+
+# 左壁
+StartCuboid
+Spacing                 0.003
+Type                    2
+Lower                -0.01500    0.00000   -0.00150
+Upper                 0.00000    0.30000    0.00150
+Velocity              0.00000    0.00000  0.0
+EndCuboid
+
+# 右壁 (x = 0.6 m)
+StartCuboid
+Spacing                 0.003
+Type                    2
+Lower                 0.60000    0.00000   -0.00150
+Upper                 0.61500    0.30000    0.00150
+Velocity              0.00000    0.00000  0.0
+EndCuboid

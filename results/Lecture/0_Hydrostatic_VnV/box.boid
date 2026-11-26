@@ -1,0 +1,45 @@
+# 演習0: 静水圧 (Verification)
+# 静止した水槽の水: 圧力の理論解 p = rho g (H - y)、速度 0
+# 水深 H = 0.2 m, 幅 0.4 m, 粒子間隔 5 mm
+# Type 1 = 水, Type 2 = 壁 (静止)
+
+ParticleDistance        0.005
+
+LowerDomain            -0.03000   -0.03000   -0.00250
+UpperDomain             0.43000    0.30000    0.00250
+
+# 水 (幅 0.4 m x 深さ 0.2 m)
+StartCuboid
+Spacing                 0.005
+Type                    1
+Lower                 0.00000    0.00000   -0.00250
+Upper                 0.40000    0.20000    0.00250
+Velocity              0.00000    0.00000  0.0
+EndCuboid
+
+# 床 (3 層)
+StartCuboid
+Spacing                 0.005
+Type                    2
+Lower                -0.01500   -0.01500   -0.00250
+Upper                 0.41500    0.00000    0.00250
+Velocity              0.00000    0.00000  0.0
+EndCuboid
+
+# 左壁
+StartCuboid
+Spacing                 0.005
+Type                    2
+Lower                -0.01500    0.00000   -0.00250
+Upper                 0.00000    0.25000    0.00250
+Velocity              0.00000    0.00000  0.0
+EndCuboid
+
+# 右壁
+StartCuboid
+Spacing                 0.005
+Type                    2
+Lower                 0.40000    0.00000   -0.00250
+Upper                 0.41500    0.25000    0.00250
+Velocity              0.00000    0.00000  0.0
+EndCuboid

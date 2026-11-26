@@ -1,0 +1,66 @@
+# 演習2: CCI-2 体系の MCCI (簡略): 伝熱・凝固の設定 (4 つの値 = Type0 Type1 Type2 Type3)
+#   Type0 = 石灰岩・砂系 (LCS) コンクリート (溶ける固定剛体), Type1 = コリウム, Type2 = 外側の壁 (断熱)
+#   Type3 は使わない
+#   CCI-2 を選ぶ理由: LCS コンクリートの侵食は横と下でほぼ等方的 (シリカ系の CCI-1/3 は横が速い)。
+#   このモデルの実効熱伝導率は等方的なので、まず等方的な実験と比べるのが筋が良い。
+#
+# ---- 物性 (概略値。CCI-2 報告書 OECD/MCCI-2004-TR05 等で必ず確認すること) ----
+#   コリウム  : 密度 6000 (box.data), cp 550, 初期 2153 K (約 1880 C),
+#               固相線 1473 K, 液相線 2073 K, 潜熱 400 kJ/kg, 液相粘度 1 Pa s
+#   コンクリート: 密度 2300, cp 1000, k 1.5, 固相線 1393 K (1120 C), 液相線 1568 K (1295 C)
+#     溶けた (剛体から外れた) とみなす固相率 = 0.5
+#     -> 300 K から外れるまでの熱 = cp (1393-300) + 0.5 (cp x 175 + L) = 2.6 MJ/kg
+#        (LCS コンクリートは CaCO3 の分解があるのでシリカ系 約 2 MJ/kg より大きい。L = 2.84 MJ/kg)
+#
+# ---- モデル化の考え方 ----
+#   崩壊熱 (実験では 120 kW の通電加熱) -> 溶融物の発熱 ThermalHeatSource (下の値の説明を参照)
+#   コンクリート分解ガスによるかき混ぜ    -> 溶融物の「実効熱伝導率」で代用
+#     実効 k = h x (深さ/2) = 250 W/(m2 K) x 0.125 m 程度 -> 30 W/(m K)
+#   溶けたコンクリート (スラグ) も、かき混ぜられたプールの一部とみなして同じ実効熱伝導率にする
+#     (ThermalLiquidConductivity)。実際にはコンクリートの酸化物は溶融物に溶け込む。これを入れないと
+#     溶けたコンクリートが側壁に膜として残って断熱材になり、横に侵食が進まない
+#   省略: 上面のクラスト・ふく射 (基本ケースは断熱)、ガスの発生そのもの、溶融物とスラグの混合
+#
+# ---- 伝熱を S 倍速にする (S = 400) ----
+#   伝熱だけの問題なら、熱伝導率を S 倍すると時間が 1/S に縮む。
+#     熱伝導率: コンクリート 1.5 x 400 = 600, 溶融物 30 x 400 = 12000
+#     -> 計算時間 t は実時間 400 t に対応 (16 s -> 約 1.8 h)
+#   S を変えたら Conductivity, ThermalLiquidConductivity, ThermalHeatSource をすべて S に比例させること
+#   (compare.py は S = Conductivity の Type0 / 1.5 として実時間に直す)
+#   流れ (溶けたコンクリートの浮上など) は倍速になっていないことに注意。
+#
+# ---- 感度解析での変え方 ----
+#   溶融物の実効熱伝導率 : Conductivity の Type1 (例 6000 = 半分, 24000 = 2 倍)
+#   コンクリートの侵食エンタルピ : LatentHeat の Type0
+#   崩壊熱を切る       : ThermalHeatSource の Type1 を 0
+#   スラグの熱伝導率を元に戻す : ThermalLiquidConductivity の Type0 を -1
+#   上面からのふく射を入れる : ThermalCoolingEnabled 1, ThermalEmissivity 0.8,
+#                              ThermalAreaFactor 480 (= 1.2 x S。ふく射も S 倍速にする)
+#     (クラストがないので熱が逃げすぎる。実験では上面のクラストがふく射を抑えている)
+#   (基本ケースは上面が断熱なので、溶融物が出した熱 (発熱を含む) = コンクリートが得た熱 -> compare.py で確認)
+# 単位: K, J/(kg K), W/(m K), J/kg
+ThermalEnabled 1
+InitialTemperature          300    2153   300    300
+HeatCapacity                1000   550    1000   1000
+Conductivity                600    12000  0      0
+SolidusTemperature          1393   1473   3000   3000
+LiquidusTemperature         1568   2073   3000   3000
+LatentHeat                  2.84e6 4.0e5  0      0
+CriticalSolidFraction       0.5    0.5    0.5    0.5
+ThermalFixedTemperature     0      0      0      0
+ThermalViscosityExponent    0      7.5    0      0
+ThermalViscosityJump        1      10     1      1
+ThermalViscosityMaxMultiplier 1e6
+# 上面からのふく射 (基本ケースは切っている)
+ThermalCoolingEnabled 0
+ThermalCoolingType          0      1      0      0
+ThermalAmbient              300
+ThermalCoolingH             0
+ThermalEmissivity           0.8
+ThermalAreaFactor           480
+# 崩壊熱 (CCI-2 の通電加熱 120 kW) [W/kg]: 120 kW / 0.5 m (奥行き) / 750 kg/m (溶融物) = 320 W/kg (実物)
+#   伝熱を S = 400 倍速にしているので発熱も 400 倍: 320 x 400 = 1.28e5 W/kg
+ThermalHeatSource           0      1.28e5 0      0
+# 溶けた (固相率 < CriticalSolidFraction) コンクリートの熱伝導率: ガスでかき混ぜられたプールの一部とみなし、
+#   溶融物と同じ実効値 (30 x S = 12000) にする。剛体のまま (固相率 >= 0.5) のコンクリートは Conductivity のまま。-1 = 使わない
+ThermalLiquidConductivity   12000  -1     -1     -1

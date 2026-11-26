@@ -1,0 +1,41 @@
+# 演習0: 静水圧 (Verification)
+# 理論解: p = rho g (H - y) (H = 0.2 m、底で rho g H = 1962 Pa)、速度 = 0
+# 確認すること: (1) 圧力分布が理論の直線に乗る (2) 速度が 0 のまま (粒子が勝手に動き出さない)
+# Type 1 = 水, Type 2 = 壁 (静止)
+Dt                              1.0e-3
+OutputInterval                  0.05
+VtkOutputInterval               0.05
+EndTime                         2.0
+
+RadiusRatioA                    3.5
+RadiusRatioP                    3.5
+RadiusRatioV                    3.5
+
+PpeMaxIteration                 3000
+PpeTolerance                    1.0e-8
+# 圧力補正の後で位置も動かす x += Dt (u^{n+1} - u*)。0 だと重力だけで水柱が毎ステップ g Dt^2 縮む
+PpePositionCorrection           1
+# 自由表面・壁際の粒子でも補正した圧力勾配を使い、壁粒子は静水圧のゴースト p_w = p_i + rho g.(x_w - x_i)
+# 0 だと表面の粒子が約 0.6 g で落ち、壁際の列が約 0.3 g で壁に沿って滑り落ちる
+PpeWallGCM                      1
+
+Density                         1000  1000  1000  1000
+ShearViscosity                  1.0e-3  1.0e-3  1.0e-3  1.0e-3
+
+# 壁の境界条件 (ソルバの既定値から変えているものだけ書く。距離は粒子間隔 dp に対する比)
+# 壁の粘性 (no-slip) は壁に沿う向きだけに効かせる / Morris (1997) の方法で壁の速度を外挿する
+WallViscTangential              1
+WallViscMorris                  1
+# 流体粒子の中心が壁粒子の中心にこれ以上近づかない距離
+WallMinGapRatio                 0.70
+# 壁に近づく粒子は、残りの隙間のこの割合までしか 1 ステップで進めないように Dt を小さくする
+WallImpactCfl                   0.25
+# 壁の圧力の条件が全部効く距離 / 効かなくなる距離
+WallPressureFullRatio           0.90
+WallPressureRangeRatio          1.45
+# 壁の粘性 (no-slip) が全部効く距離 / 効かなくなる距離 (影響半径 3.5 dp 全体に効かせる)
+WallViscFullRatio               3.5
+WallViscRangeRatio              3.6
+
+Gravity                         0       -9.81       0.0
+
